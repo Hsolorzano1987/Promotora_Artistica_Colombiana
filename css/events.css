@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+font-family: 'Montserrat', sans-serif;
+overflow-x: hidden;
+}
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.video01,
+.video02 {
+    flex: 1 1 45%;
+    /* Los videos ocupan hasta el 45% del ancho del contenedor */
+    margin: 10px;
+    /* Espacio entre los videos */
+}
+
+.back-video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    /* Aplica bordes redondeados */
+}
+#menu li>a {
+font-size: 18px;
+font-weight: bold;
+color: #3f3f3f;
+}
