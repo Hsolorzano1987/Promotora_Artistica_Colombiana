@@ -39,6 +39,110 @@ body{
 
 
 
+/*==============================Artista====================================*/
+
+/* Asegura que las imágenes tengan un tamaño consistente y se vean bien */
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    /* Bordes redondeados para un mejor estilo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    transition: transform 0.3s;
+    /* Transición suave para el hover */
+}
+
+/* Estilo para centrar el contenido y espaciado alrededor */
+.icono-wrap {
+    flex-direction: column;
+    /* Coloca elementos en columna */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    text-align: center;
+    /* Centra el texto en su contenedor */
+    margin: 0 auto;
+    /* Centro horizontal en contenedores */
+    max-width: 320px;
+    /* Ancho máximo para asegurar que las imágenes no sean demasiado grandes */
+}
+
+/* Estilos mejorados para los textos */
+.p-3 {
+    padding: 16px;
+    /* Espaciado interno para separar del borde */
+    font-family: 'Arial', sans-serif;
+    /* Fuente legible */
+    font-size: 1.25em;
+    /* Tamaño de fuente ajustado */
+    color: #333;
+    /* Color de texto oscuro */
+    text-align: center;
+    /* Asegura que el texto esté centrado */
+}
+
+.text-primary {
+    color: #007bff;
+    /* Color primario (azul) */
+    font-weight: bold;
+    /* Negrita para destacar */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera para el texto */
+}
+
+/* Estilos para mejorar la apariencia de los enlaces */
+.icono-wrap a {
+    text-decoration: none;
+    /* Quita subrayado en enlaces */
+    color: inherit;
+    /* Usa el color del texto padre */
+    display: flex;
+    flex-direction: column;
+    /* Ordena verticalmente la imagen y el texto */
+    align-items: center;
+    /* Centra horizontalmente los elementos */
+}
+
+/* Transición al hacer hover sobre la imagen */
+.icono-wrap a:hover .video-thumbnail {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño de la imagen */
+}
+
+/* Estilos adicionales para texto */
+.fs-4 {
+    font-size: 1.5em;
+    /* Aumenta el tamaño del texto */
+    margin-top: 12px;
+    /* Espacio superior adicional */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .icono-wrap {
+        max-width: 100%;
+        /* Asegura que los contenedores sean flexibles en dispositivos móviles */
+        margin: 10px 0;
+        /* Ajusta el margen para pantallas pequeñas */
+    }
+
+    .fs-4 {
+        font-size: 1.2em;
+        /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+}
+
+.icono-wrap {
+    padding: 0 15px;
+    /* Añade algo de espacio alrededor de los divs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*==============================ACERCA DE MI====================================*/
         
@@ -116,7 +220,7 @@ body{
         top: -110px;
     }
 
-/*==============================SECCION EQUIPO MIAMI====================================*/
+/*==============================Contacto====================================*/
 
     #numeros-local div{
         padding: 0 20px 0 0;
