@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+font-family: 'Montserrat', sans-serif;
+overflow-x: hidden;
+}
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.video01,
+.video02 {
+    flex: 1 1 45%;
+    /* Los videos ocupan hasta el 45% del ancho del contenedor */
+    margin: 10px;
+    /* Espacio entre los videos */
+}
+
+.back-video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    /* Aplica bordes redondeados */
+}
+#menu li>a {
+font-size: 18px;
+font-weight: bold;
+color: #3f3f3f;
+}
+
+/* Estilo para las imágenes de video */
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    /* Bordes redondeados para un mejor estilo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    transition: transform 0.3s;
+    /* Transición suave para el hover */
+}
+
+/* Contenedor para la imagen y el icono */
+.video-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    /* Asegura que el contenedor tome el ancho completo */
+}
+
+/* Estilo para el icono de reproducción */
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    /* Tamaño del icono */
+    color: rgba(255, 255, 255, 0.8);
+    /* Color blanco semi-transparente */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo negro semi-transparente */
+    border-radius: 50%;
+    /* Redondea el fondo del icono */
+    padding: 10px;
+    /* Espaciado interno del icono */
+    pointer-events: none;
+    /* Evita que el icono intercepte los clics */
+}
+
+/* Efecto hover para la imagen */
+.video-container:hover .video-thumbnail {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño de la imagen */
+}
+
+/* Estilo para centrar el contenido y espaciado alrededor */
+.icono-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 320px;
+    position: relative;
+}
+
+/* Estilos mejorados para los textos */
+.p-3 {
+    padding: 16px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.25em;
+    color: #333;
+    text-align: center;
+}
+
+.text-primary {
+    color: #007bff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos adicionales para enlaces */
+.video-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Transiciones y efectos responsivos */
+@media (max-width: 768px) {
+    .icono-wrap {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .fs-4 {
+        font-size: 1.2em;
+    }
+
+    .play-icon {
+        font-size: 2em;
+        /* Ajusta el tamaño del icono para pantallas pequeñas */
+    }
+}
